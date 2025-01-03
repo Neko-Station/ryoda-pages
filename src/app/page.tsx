@@ -76,7 +76,7 @@ export default function Home() {
           <footer className="row-start-3 flex gap-2 flex-wrap items-center justify-center py-4 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]">
             <a
                 className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
-                href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -89,7 +89,7 @@ export default function Home() {
             </a>
             <a
                 className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
-                href=""
+                href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -100,4 +100,5 @@ export default function Home() {
       </>
   );
 }
+
 
