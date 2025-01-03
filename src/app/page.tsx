@@ -13,11 +13,13 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
               {/* Left Section */}
               <div className="w-fit text-center md:text-left">
-                <img
-                    className="w-64 h-64 rounded-full border-4 border-[#d8a657] transition-transform duration-300 ease-in-out hover:scale-105"
-                    src="https://github.com/Ryoda1.png"
-                    alt="Ryoday"
-                />
+                <a href="https://github.com/Ryoda1" target="_blank">
+                  <img
+                      className="w-64 h-64 rounded-full border-4 border-[#d8a657] transition-transform duration-300 ease-in-out hover:scale-105"
+                      src="https://github.com/Ryoda1.png"
+                      alt="Ryoday"
+                  />
+                </a>
                 <h1 className="text-3xl font-bold mt-6 text-[#f8c6c1]">#Ryoda</h1>
                 <p className="text-[#f2d0a9] text-lg">Developer && Linux user</p>
                 <div className="mt-6 space-y-3">
@@ -99,6 +101,7 @@ export default function Home() {
         </div>
       </>
   );
+}
 }
 
 
