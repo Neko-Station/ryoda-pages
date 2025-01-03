@@ -98,12 +98,12 @@ export default function Home() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        &lt; Asaneko
+                        &lt; AsaNekoo
                     </a>
                     <a
                         className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300 cursor-pointer"
                     >
-                        Neko Stationв
+                        Neko Station
                     </a>
                     <a
                         className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
