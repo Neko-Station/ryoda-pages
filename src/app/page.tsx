@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+
 const imageLoader = ({ src, width, quality }: { src: string; width?: number; quality?: number }) => {
   return `https://github.com/${src}?w=${width}&q=${quality}`;
 };
@@ -23,6 +24,8 @@ export default function Home() {
                           loader={imageLoader}
                           src="Ryoda1.png"
                           alt="Picture of the author"
+                          width={128}
+                          quality={75}
                       />
                 </a>
                 <h1 className="text-3xl font-bold mt-6 text-[#f8c6c1]">#Ryoda</h1>
