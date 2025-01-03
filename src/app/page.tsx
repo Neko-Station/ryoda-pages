@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-const imageLoader = ({ src }) => {
+const imageLoader = ({ src: string }) => {
   return `https://github.com/${src}`
 }
 
