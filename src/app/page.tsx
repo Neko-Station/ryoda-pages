@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+const imageLoader = ({ src, width, quality }) => {
+  return `https://github.com/${src}`
+}
+
 export default function Home() {
   return (
       <>
@@ -15,13 +19,11 @@ export default function Home() {
               {/* Left Section */}
               <div className="w-fit text-center md:text-left">
                 <a href="https://github.com/Ryoda1" target="_blank">
-                  <Image
-                      className="w-64 h-64 rounded-full border-4 border-[#d8a657] transition-transform duration-300 ease-in-out hover:scale-105"
-                      src="https://github.com/Ryoda1.png"
-                      alt="Ryoday"
-                      width={256}
-                      height={256}
-                  />
+                      <Image
+                          loader={imageLoader}
+                          src="Ryoda1.png"
+                          alt="Picture of the author"
+                      />
                 </a>
                 <h1 className="text-3xl font-bold mt-6 text-[#f8c6c1]">#Ryoda</h1>
                 <p className="text-[#f2d0a9] text-lg">Developer && Linux user</p>
