@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-const imageLoader = ({ src, width, quality }) => {
-  return `https://github.com/${src}?w=${width}&q=${quality || 75}`
-}
+const imageLoader = ({ src, width, quality }: { src: string; width?: number; quality?: number }) => {
+  return `https://github.com/${src}?w=${width}&q=${quality}`;
+};
+
 
 export default function Home() {
   return (
