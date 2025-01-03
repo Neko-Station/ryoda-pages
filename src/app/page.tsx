@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
       <>
         <Head>
           <title>About Me - Ryoda</title>
-          <meta name="description" content="About Ryoda, TypeScript developer and Linux user." />
+          <meta name="description" content="About Ryoda, TypeScript developer and Linux user."/>
         </Head>
 
         <div className="min-h-screen flex flex-col bg-[#1e1e2e] text-[#d9e0ee]">
@@ -14,10 +15,12 @@ export default function Home() {
               {/* Left Section */}
               <div className="w-fit text-center md:text-left">
                 <a href="https://github.com/Ryoda1" target="_blank">
-                  <img
+                  <Image
                       className="w-64 h-64 rounded-full border-4 border-[#d8a657] transition-transform duration-300 ease-in-out hover:scale-105"
                       src="https://github.com/Ryoda1.png"
                       alt="Ryoday"
+                      width={256}
+                      height={256}
                   />
                 </a>
                 <h1 className="text-3xl font-bold mt-6 text-[#f8c6c1]">#Ryoda</h1>
@@ -50,24 +53,33 @@ export default function Home() {
 
                 <h2 className="text-2xl font-bold mb-6 text-[#f8c6c1]">What I’m Doing</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+                  <div
+                      className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <h3 className="text-lg font-semibold text-[#f8c6c1]">Front-End developing</h3>
-                    <p className="text-[#f2d0a9]">I’m a Front-End developer, focused on building user-friendly and visually appealing interfaces.</p>
+                    <p className="text-[#f2d0a9]">I’m a Front-End developer, focused on building user-friendly and
+                      visually appealing interfaces.</p>
                   </div>
 
-                  <div className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+                  <div
+                      className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <h3 className="text-lg font-semibold text-[#f8c6c1]">System Administration</h3>
-                    <p className="text-[#f2d0a9]">I’m a System Administrator, managing IT infrastructure and ensuring its security and performance. I am also studying Linux to deepen my expertise in system management.</p>
+                    <p className="text-[#f2d0a9]">I’m a System Administrator, managing IT infrastructure and ensuring
+                      its security and performance. I am also studying Linux to deepen my expertise in system
+                      management.</p>
                   </div>
 
-                  <div className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+                  <div
+                      className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <h3 className="text-lg font-semibold text-[#f8c6c1]">Open source</h3>
-                    <p className="text-[#f2d0a9]">I’m passionate about open source and actively support it by promoting the use of open technologies, although I’m not currently participating in projects.</p>
+                    <p className="text-[#f2d0a9]">I’m passionate about open source and actively support it by promoting
+                      the use of open technologies, although I’m not currently participating in projects.</p>
                   </div>
 
-                  <div className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+                  <div
+                      className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <h3 className="text-lg font-semibold text-[#f8c6c1]">Community Engagement</h3>
-                    <p className="text-[#f2d0a9]">I enjoy engaging in online communities, sharing knowledge, and exchanging experiences with others.</p>
+                    <p className="text-[#f2d0a9]">I enjoy engaging in online communities, sharing knowledge, and
+                      exchanging experiences with others.</p>
                   </div>
                 </div>
               </div>
@@ -75,7 +87,8 @@ export default function Home() {
           </div>
 
           {/* Footer Section */}
-          <footer className="row-start-3 flex gap-2 flex-wrap items-center justify-center py-4 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]">
+          <footer
+              className="row-start-3 flex gap-2 flex-wrap items-center justify-center py-4 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]">
             <a
                 className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
                 href=""
@@ -87,7 +100,7 @@ export default function Home() {
             <a
                 className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300 cursor-pointer"
             >
-              Neko Station
+              Neko Stationв
             </a>
             <a
                 className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
